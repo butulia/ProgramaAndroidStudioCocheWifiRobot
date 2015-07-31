@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.hanry.MjpegView
+        android:id="@+id/mySurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" />
+    
+    <ImageButton android:id="@+id/btnLeft" 
+        android:src="@drawable/sym_left"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp" />
+    
+    <ImageButton android:id="@+id/btnBack" 
+		android:src="@drawable/sym_backward"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+		android:layout_toRightOf="@id/btnLeft"
+        android:layout_alignParentBottom="true" />
+   
+    <ImageButton android:id="@+id/btnStop"
+		android:src="@drawable/sym_stop"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/btnBack"
+        android:layout_above="@id/btnBack"/>
+    
+    <ImageButton android:id="@+id/btnRight"
+        android:src="@drawable/sym_right"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/btnLeft"
+        android:layout_toRightOf="@id/btnStop" />
+    	
+    <ImageButton android:id="@+id/btnForward"
+		android:src="@drawable/sym_forward"
+        android:background="#00000000"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/btnBack"
+        android:layout_above="@id/btnStop"/>
+
+   <ImageButton android:id="@+id/ButtonCus1" 
+		android:src="@drawable/sym_setting"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left" />
+   
+   <ImageView android:id="@+id/btnIndicator" 
+		android:src="@drawable/sym_indicator"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_alignParentTop="true" />
+
+   <ImageButton android:id="@+id/ButtonTakePic" 
+		android:src="@drawable/take_pic"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/btnIndicator" />
+      
+   <TextView android:id="@+id/logTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+       android:text="..."
+          android:textSize="10sp"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/btnIndicator"
+       android:layout_toLeftOf="@+id/btnLen"
+       android:layout_alignBottom="@+id/btnLen" />
+
+   <ImageButton
+       android:id="@+id/btnLen"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#00000000"
+       android:src="@drawable/sym_light_off"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="5dp" />
+
+   <com.hanry.SeekBarChin
+       android:id="@+id/barraVertical"
+       android:layout_width="30dp"
+       android:layout_height="250dp"
+       android:layout_above="@+id/btnBack"
+       android:layout_alignRight="@+id/btnLen"
+       android:layout_below="@+id/btnLen"
+       android:layout_marginRight="3dp" />
+
+    <SeekBar
+        android:id="@+id/barraHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnRight"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/logTextView" />
+
+    <ImageButton
+        android:id="@+id/btnAlinearCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cruceta"
+        android:background="#00000000"
+        android:layout_alignBottom="@+id/barraHorizontal"
+        android:layout_alignRight="@+id/barraVertical"
+        android:layout_alignTop="@+id/barraHorizontal"
+        android:layout_alignLeft="@+id/barraVertical" />
+</RelativeLayout><!-- From: file:/C:/Users/Edu/StudioProjects/wifiRobot/app/src/main/res/layout/main.xml -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Edu/StudioProjects/wifiRobot/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="gear_steps">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="app_name">App coche WIFI</string>
+    <string name="hello">hanry</string>
+    <string name="title_activity_wifi_car_settings">Configuracion</string>
+</resources>
